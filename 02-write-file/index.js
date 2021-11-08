@@ -18,11 +18,7 @@ stdin.on('data', data => {
         process.exit();
     } else {
         fs.appendFile(
-            path.join(__dirname, '02-write-file.txt'),
-            `${data}`,
-            err => {
-                if (err) throw err;
-            }
+            path.join(__dirname, '02-write-file.txt'), `${data}`, err => {}
         );
     }
 });
