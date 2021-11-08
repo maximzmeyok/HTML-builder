@@ -10,7 +10,6 @@ fs.writeFile(
     }
 );
 
-//console.log('Введите ваш текст: ');
 stdout.write('Введите ваш текст: ');
 
 stdin.on('data', data => {
